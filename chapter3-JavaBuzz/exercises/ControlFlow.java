@@ -3,29 +3,38 @@ import java.util.Scanner;
 // can you remember how to set up your main function?
 public class ControlFlow {
   public static void main (String[] args) {
-    // find a way to read in user input
+    int user_integer = getUserInput();
+    boolean isEven = evenCheck(user_integer);
+    message(isEven);
+  }
+
+  public static int getUserInput() {
     System.out.println("Enter a number: ");
     Scanner scanner = new Scanner(System.in);
     String user_number = scanner.nextLine();
     int user_integer = Integer.parseInt(user_number);
-    // write a method that will check if a number is odd or even
+    return user_integer;
+}
+
+  public static boolean evenCheck(int user_integer) {
     boolean isEven;
     if(user_integer % 2 == 0){
-        isEven = true;
+      isEven = true;
     }
     else
     {
-    isEven = false;
+      isEven = false;
     }
-    // print the answer to the console
+    return isEven;
+  }
+
+  public static void message(boolean isEven) {
     if(isEven){
-        String message = String.format("%s is an even number", user_integer);
-        System.out.println(message);
+      System.out.println("That's an even number");
     }
     else
     {
-      String message = String.format("%s is an odd number", user_integer);
-      System.out.println(message);
+      System.out.println("That's an odd number");
     }
   }
 }
