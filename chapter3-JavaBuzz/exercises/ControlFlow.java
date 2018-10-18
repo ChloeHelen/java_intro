@@ -4,8 +4,12 @@ import java.util.Scanner;
 public class ControlFlow {
   public static void main (String[] args) {
     int user_integer = getUserInput();
+    while (user_integer != 17)
+    {
     boolean isEven = evenCheck(user_integer);
     message(isEven);
+    user_integer = getUserInput();
+    }
   }
 
   public static int getUserInput() {
