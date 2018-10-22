@@ -2,16 +2,16 @@ import java.util.Scanner;
 // can you remember how to set up your main function?
 public class JavaBuzz {
   public static void main (String[] args) {
-    int number = getUserInput();
-    if (divisibleByFifteen(number)) {
-      System.out.println("JavaBuzz");
-    }
-    else if (divisibleByThree(number)) {
-      System.out.println("Java");
-    }
-    else if (divisibleByFive(number)) {
-      System.out.println("Buzz");
-    }
+    // int number = getUserInput();
+    // if (divisibleByFifteen(number)) {
+    //   System.out.println("JavaBuzz");
+    // }
+    // else if (divisibleByThree(number)) {
+    //   System.out.println("Java");
+    // }
+    // else if (divisibleByFive(number)) {
+    //   System.out.println("Buzz");
+    // }
   }
 // "Java" if divisible by 3
   public static boolean divisibleByThree(int num) {
